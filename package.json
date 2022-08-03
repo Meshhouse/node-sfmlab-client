@@ -1,0 +1,54 @@
+{
+  "name": "node-sfmlab-client",
+  "version": "1.0.0",
+  "description": "Unofficial SFMLab-based sites client",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meshhouse/node-sfmlab-client.git"
+  },
+  "keywords": [
+    "sfmlab",
+    "typescript"
+  ],
+  "author": {
+    "name": "Maxim Makarov",
+    "url": "https://github.com/longsightedfilms"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Meshhouse/node-sfmlab-client/issues"
+  },
+  "homepage": "https://github.com/Meshhouse/node-sfmlab-client#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "date-fns": "^2.22.1",
+    "form-data": "^4.0.0",
+    "got": "^11.8.2",
+    "hpagent": "^0.1.2",
+    "ow": "^0.27.0",
+    "qs": "^6.10.1",
+    "sanitize-html": "^2.4.0",
+    "tough-cookie": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.29",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^15.12.4",
+    "@types/node-cron": "^2.0.3",
+    "@types/qs": "^6.9.7",
+    "@types/sanitize-html": "^2.3.1",
+    "@types/tough-cookie": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.4"
+  }
+}
