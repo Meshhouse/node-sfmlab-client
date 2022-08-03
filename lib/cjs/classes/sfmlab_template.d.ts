@@ -26,8 +26,15 @@ export default abstract class SFMLabTemplate {
      */
     getUser(): Promise<SFMLabUser | Error>;
     /**
+     * Fetch models
+     * @param page page
+     * @returns
+     */
+    getProjectsList(page: number): Promise<any>;
+    /**
    * Fetch models, categories, licenses and total pages count
    * @param query Query object
+   * @deprecated use getProjectsList for faster response
    */
     getModels(query?: SFMLabQuery | SmutbaseQuery | Open3DLabQuery, withParser?: boolean): Promise<SFMLabResponse | Error>;
     /**
@@ -104,7 +111,7 @@ export default abstract class SFMLabTemplate {
     private parseDate;
     /**
      * Find all commentaries for model from custom elements root
-     * @param container Custom element root
+     * @param id model id
      */
     private getComments;
     /**
