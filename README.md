@@ -1,5 +1,8 @@
 # node-sfmlab-client
 Unofficial SFMLab-based sites client, written on Typescript, decoupled from sfmlab-unofficial-api.
+```
+This repository stays for history purpose, but SFMLab client is closed for breaking website's terms of use.
+```
 
 # Requirements
 It's intended to use with Node.js, not tested with browser environment.
